@@ -8,6 +8,16 @@
   background-color: #f9f9f9;
 }
 
+
+.app.light .auth-panel {
+  background-color: #f9f9f9;
+}
+
+
+.app.dark .auth-panel {
+  background-color: #2a2a2a;
+}
+
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -37,3 +47,55 @@
   font-size: 0.9rem;
 }
 
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.app.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.app.light .header {
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+.app.dark {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.app.dark .header {
+  background-color: #333;
+  color: #FFD600;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.theme-toggle {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
